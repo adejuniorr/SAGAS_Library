@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de busca de livros em uma biblioteca com base em saga, título, autor(a), sinopse, etc.">
+    <meta name="keywords" content="biblioteca, library, livros, books, harry potter, lord of the rings, o senhor dos anéis, sagas, épicas, histórias">
+    <title>Biblioteca Sagas</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    
+</head>
+<body>
+    <div class="website__top">
+        <div class="content">
+            <header>
+                <div id="SAGAS-logo">
+                    <img src="img/SAGAS-logo.svg" alt="SAGAS Library Logo" width="156">
+                </div>
+                <div id="header-tools">
+                    <img src="img/icons/blue-search-icon.svg" width="32" alt="Icone de busca">
+                    <img src="img/icons/blue-hamb-menu.svg" width="32" alt="Icone de busca">
+                </div>
+            </header>
+            <div class="top__content__wrap ">
+                <div id="left-top-content">
+                    <img src="img/library-build-img.svg" width="320" alt="Edifício da biblioteca (imagem feita por IA)">
+                </div>
+                <div id="right-top-content">
+                    <h2>Top 3 da semana</h2>
+                    <div class="top3__cards__wrap">
+                        <div class="card mb-3 book__card" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4 top3__card__img" id="book-card-img1">
+                                <img src="img/books/harry-potter-e-a-pedra-filosofal.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Pedra Filosofal">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                  <h5 class="card-title" id="book-card-title1">Harry Potter e a Pedra Filosofal</h5>
+                                  <p class="card-text" id="book-card-sinopses1">O início da jornada de Harry Potter no mundo mágico, frequentando a Escola de Magia e Bruxaria de Hogwarts.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div> <!-- CARD 1 -->
+
+                        <div class="card mb-3 book__card" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4 top3__card__img" id="book-card-img2">
+                                <img src="img/books/harry-potter-e-a-camara-secreta.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Câmara Secreta">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                  <h5 class="card-title" id="book-card-title2">Harry Potter e a Câmara Secreta</h5>
+                                  <p class="card-text" id="book-card-sinopses2">Harry descobre uma câmara secreta em Hogwarts e enfrenta uma ameaça que petrifica os estudantes da escola.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div> <!-- CARD 2 -->
+
+                        <div class="card mb-3 book__card" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4 top3__card__img" id="book-card-img3">
+                                <img src="img/books/harry-potter-e-o-prisioneiro-de-azkaban.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e o Prisioneiro de Azkaban">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                  <h5 class="card-title" id="book-card-title3">Harry Potter e o Prisioneiro de Azkaban</h5>
+                                  <p class="card-text" id="book-card-sinopses3">Harry descobre a verdade sobre seu passado enquanto enfrenta um perigoso prisioneiro que escapou de Azkaban.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div> <!-- CARD 3 -->
+                    </div> <!-- top-3-cards -->
+    
+                </div> <!-- right-top-content -->
+            </div>
+            <div class="top__content__search hidden">
+                <div class="search__result">
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/harry-potter-colection-bg.jpg" class="card-img" alt="Coleção Harry Potter">
+                    </div>
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/the-lord-of-the-rings-colection-bg.jpeg" class="card-img" alt="Coleção O Senhor dos Anéis">                        
+                    </div>
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/the-hunger-games-colection-bg.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
+                    </div>
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/harry-potter-colection-bg.jpg" class="card-img" alt="Coleção Harry Potter">
+                    </div>
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/the-lord-of-the-rings-colection-bg.jpeg" class="card-img" alt="Coleção O Senhor dos Anéis">                        
+                    </div>
+                    <div class="card text-bg-dark search__result__card">
+                        <img src="img/books/the-hunger-games-colection-bg.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
+                    </div>
+                </div>
+                <span class="search__right__text">
+                    <h2>Confira algumas das nossas coleções!</h2>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="website__middle">
+        <div class="content">
+            <img src="img/girl-reading.svg" alt="Garota Lendo Livro, arte pixelada (IA)">
+        </div>
+    </div>
+
+    <div class="website__bottom">
+        <div class="content">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
