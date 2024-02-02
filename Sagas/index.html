@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/vars.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 </head>
 <body>
     <div class="website__top">
@@ -21,8 +22,19 @@
                     <img src="img/SAGAS-logo.svg" alt="SAGAS Library Logo" width="156">
                 </div>
                 <div id="header-tools">
-                    <a href="#search"><img src="img/icons/blue-search-icon.svg" width="32" alt="Icone de busca"></a>
-                    <img src="img/icons/blue-hamb-menu.svg" width="32" alt="Icone de busca">
+                    <a href="#middle"><img src="img/icons/blue-search-icon.svg" width="32" alt="Icone de busca"></a>
+                    
+                    <div class="dropdown__container">
+                        <label class="hamburger__menu">
+                            <input type="checkbox">
+                        </label>
+                        <div class="dropdown__header__menu">
+                            <nav>
+                                <button type="button" class="header_btn">Login</button>
+                                <button type="button" class="header_btn" disabled>Meus livros</button>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="top__content__wrap ">
@@ -78,11 +90,11 @@
                 </div> <!-- right-top-content -->
             </div>
         </div>
-    </div>
+    </div> <!-- website__top -->
 
-    <div class="website__middle">
+    <div class="website__middle" id="middle">
         <div class="content middle__img">
-            <img src="img/girl-reading.svg" alt="Garota Lendo Livro, arte pixelada (IA)">
+            <img src="img/girl-reading.svg" width="300" alt="Garota Lendo Livro, arte pixelada (IA)">
         </div>
     </div>
 
@@ -117,10 +129,10 @@
                     <div class="card text-bg-light search__result__card">
                         <img src="img/books/the-hunger-games-colection-bg.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
                     </div>
-                </div>
+                </div> <!-- search__result -->
             </div>
         </div>
-    </div>
+    </div> <!-- website__bottom -->
 
     <footer>
         <h3>Fale conosco!</h3>

@@ -10,12 +10,19 @@
     scroll-behavior: smooth;
 }
 
-.content { /*  PAGE LIMITATION */
+.content {
+    /*  PAGE LIMITATION */
     padding: 44px 128px;
     overflow: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 { /* TITLES FONT */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* TITLES FONT */
     font-family: 'Rakkas', sans-serif;
 }
 
@@ -39,6 +46,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: fit-content;
+    width: 752px;
 }
 
 #header-tools {
@@ -50,6 +58,92 @@ header {
 #header-tools img {
     cursor: pointer;
 }
+
+/* DROPDOWN HAMBURGER MENU */
+.hamburger__menu {
+    --x-width: 34px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hamburger__menu::before,
+.hamburger__menu::after,
+.hamburger__menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: #3800FF;
+    border-radius: 16px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), rotate var(--animation-timing);
+}
+
+.hamburger__menu input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger__menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+}
+.hamburger__menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+}
+
+.hamburger__menu input:checked {
+    opacity: 0;
+}
+
+.dropdown__header__menu {
+    position: absolute;
+    margin-top: 8px;
+    left: 782px;
+    background-color: #3800FF;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 2;
+    translate: 0 -5%;
+    opacity: 0;
+    transition: translate var(--animation-timing), opacity var(--animation-timing);
+}
+
+.hamburger__menu:has(input:checked) + .dropdown__header__menu {
+    translate: 0;
+    opacity: 1;
+}
+
+.dropdown__header__menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dropdown__header__menu button {
+    padding: 8px;
+    background: transparent;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.dropdown__header__menu button:hover {
+    background-color: #5a2cff;
+}
+
+.dropdown__header__menu button:disabled {
+    background-color: #3800FF;
+    color: #aaa;
+}
+/* FIM - DROPDOWN HAMBURGER MENU */
+
 /* FIM HEADER */
 
 /* CONTEÚDO EM DESTAQUE (TOPO) */
@@ -82,7 +176,7 @@ header {
 
 .top3__cards__wrap::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    
+
 }
 
 .top3__cards__wrap::-webkit-scrollbar-thumb {
@@ -123,6 +217,7 @@ header {
     max-width: fit-content;
     max-height: fit-content;
 }
+
 /* FIM SECTION - TOP 3 SEMANAL*/
 
 
@@ -132,18 +227,25 @@ header {
     padding-top: 0;
     padding-bottom: 0;
 }
+
 /* FIM SECTION - WEBSITE MIDDLE */
 
 
 /* SECTION - SEARCH */
-.bottom__content__search {
-    background-color: #FFD60A;
-    padding: 16px 8px;
-    border-radius: 16px;
-    text-align: center;
+.website__bottom .content {
+    padding-top: 10px;
 }
 
-.search__title > h2 {
+.bottom__content__search {
+    background-color: #FFD60A;
+    padding: 8px;
+    border-radius: 16px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.search__title>h2 {
     font-size: 2.4rem;
 }
 
@@ -209,12 +311,9 @@ header {
 .search__result::-webkit-scrollbar-thumb {
     background-color: #3800FF;
 }
+
 /* FIM SECTION - SEARCH*/
 
-
-.hidden {
-    display: none;
-}
 
 /* SECTION - FOOTER */
 footer {
@@ -232,4 +331,20 @@ footer {
 
 footer p {
     margin-bottom: 0;
+}
+
+/* FIM SECTION - FOOTER */
+
+
+/* ASSETS */
+.hidden {
+    display: none;
+}
+
+.rotate_left {
+    transform: rotate(-90deg);
+}
+
+.rotate_right {
+    transform: rotate(90deg);
 }
