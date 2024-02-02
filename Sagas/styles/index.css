@@ -46,7 +46,6 @@ header {
     align-items: center;
     justify-content: space-between;
     height: fit-content;
-    width: 752px;
 }
 
 #header-tools {
@@ -153,6 +152,11 @@ header {
     justify-content: space-between;
     margin-top: 20px;
     gap: 20px;
+}
+
+/* SECTION - LOCALIZAÇÃO */
+#left-top-content img:hover {
+    content: url('../img/library-build-hover-img.svg');
 }
 
 /* SECTION - TOP 3 SEMANAL */
