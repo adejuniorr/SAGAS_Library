@@ -1,0 +1,12 @@
+:root {
+    /* COLORS */
+    --dark-blue: #3800FF;
+    --yellow: #FFD60A;
+
+    /* HAMBURGER MENU*/
+    --bar-width: 32px;
+    --bar-height: 6px;
+    --hamburger-gap: 6px;
+    --animation-timing: 150ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(var(--hamburger-gap) *2))
+}

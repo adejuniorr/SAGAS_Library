@@ -1,0 +1,62 @@
+#right-login-content {
+    display: flex;
+    width: 520px;
+    min-width: 300px;
+    text-align: center;
+    height: 64vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle_form__link {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.toggle_form__link span {
+    margin-right: 4px;
+}
+
+.toggle_form__link:hover {
+    text-decoration: underline;
+}
+
+.form__wrap {
+    width: 80%;
+    background-color: var(--yellow);
+    padding: 16px;
+    text-align: left;
+    border-radius: 16px;
+}
+
+#exampleInputPassword1 {
+    margin-bottom: 8px;
+}
+
+.form__wrap a {
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: .9rem;
+}
+
+.form__wrap .form-label {
+    font-size: 1.2rem;
+}
+
+#login .bottom__form {
+    justify-content: end;
+}
+
+.bottom__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

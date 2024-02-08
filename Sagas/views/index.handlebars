@@ -1,0 +1,125 @@
+<header>
+    <div id="SAGAS-logo">
+        <img src="/img/SAGAS-logo-yellow.svg" alt="SAGAS Library Logo" width="256">
+    </div>
+    <div id="header-tools">
+        <a href="#middle"><img src="/img/icons/blue-search-icon.svg" width="32" alt="Icone de busca"></a>
+
+        <div class="dropdown__container">
+            <label class="hamburger__menu">
+                <input type="checkbox">
+            </label>
+            <div class="dropdown__header__menu">
+                <nav>
+                    <a href="/login">Login</a>
+                    <button type="button" class="header_btn" disabled>Meus livros</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="website__top">
+    <div class="content">
+        <div class="top__content__wrap ">
+            <div id="left-top-content" class="home__page"></div>
+            <div id="right-top-content">
+                <h3>Confira nosso</h3>
+                <h2>Top 3 da semana</h2>
+                <div class="top3__cards__wrap">
+                    <div class="card mb-3 book__card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 top3__card__img" id="book-card-img1">
+                                <img src="/img/books/harry-potter-e-a-pedra-filosofal.jpg"
+                                    class="img-fluid rounded-start"
+                                    alt="Capa do livro Harry Potter e a Pedra Filosofal">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                    <h5 class="card-title" id="book-card-title1">Harry Potter e a Pedra Filosofal</h5>
+                                    <p class="card-text" id="book-card-sinopses1">O início da jornada de Harry Potter no
+                                        mundo mágico, frequentando a Escola de Magia e Bruxaria de Hogwarts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- CARD 1 -->
+
+                    <div class="card mb-3 book__card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 top3__card__img" id="book-card-img2">
+                                <img src="/img/books/harry-potter-e-a-camara-secreta.jpg"
+                                    class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Câmara Secreta">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                    <h5 class="card-title" id="book-card-title2">Harry Potter e a Câmara Secreta</h5>
+                                    <p class="card-text" id="book-card-sinopses2">Harry descobre uma câmara secreta em
+                                        Hogwarts e enfrenta uma ameaça que petrifica os estudantes da escola.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- CARD 2 -->
+
+                    <div class="card mb-3 book__card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 top3__card__img" id="book-card-img3">
+                                <img src="/img/books/harry-potter-e-o-prisioneiro-de-azkaban.jpg"
+                                    class="img-fluid rounded-start"
+                                    alt="Capa do livro Harry Potter e o Prisioneiro de Azkaban">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body top3__card__text">
+                                    <h5 class="card-title" id="book-card-title3">Harry Potter e o Prisioneiro de Azkaban
+                                    </h5>
+                                    <p class="card-text" id="book-card-sinopses3">Harry descobre a verdade sobre seu
+                                        passado enquanto enfrenta um perigoso prisioneiro que escapou de Azkaban.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- CARD 3 -->
+                </div> <!-- top-3-cards -->
+
+            </div> <!-- right-top-content -->
+        </div>
+    </div>
+</div> <!-- website__top -->
+
+<div class="website__middle" id="middle">
+    <div class="content middle__img">
+        <img src="/img/girl-reading.svg" width="360" alt="Garota Lendo Livro, arte pixelada (IA)">
+    </div>
+</div>
+
+<div class="website__bottom">
+    <div class="content">
+        <div class="bottom__content__search">
+            <span class="search__title">
+                <h2>Buscar obras</h2>
+            </span>
+
+            <div class="search__input__wrap">
+                <input type="text" name="search-books" id="search_book_input">
+                <span class="fas fa-search"></span>
+            </div>
+
+            <div class="search__result">
+                {{!-- {{#each books}}
+                <div class="card text-bg-light search__result__card">
+                    <img src=`/img/books/{{dataValues.imgURL}}.jpg` class="card-img" alt="Coleção Harry Potter">
+                </div>
+                {{/each}} --}}
+            </div> <!-- search__result -->
+        </div>
+    </div>
+</div> <!-- website__bottom -->
+
+<footer>
+    <h3>Fale conosco!</h3>
+    <div class="footer__links">
+        <a href="https://wa.me/77991379957" target="_blank"><img src="/img/icons/blue-whatsapp-icon.svg"
+                width="30" alt="Icone Whatsapp"></a>
+        <a href="#"><img src="/img/icons/blue-telegram-icon.svg" width="30" alt="Icone Telegram"></a>
+        <a href="#"><img src="/img/icons/blue-instagram-icon.svg" width="30" alt="Icone Instagram"></a>
+        <a href="#"><img src="/img/icons/blue-twitter-icon.svg" width="30" alt="Icone Twitter"></a>
+    </div>
+    <p>SAGAS Library © 2024</p>
+</footer>

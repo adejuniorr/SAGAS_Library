@@ -1,0 +1,58 @@
+{
+    "collections" : [
+        {
+            "name": "Coleção Harry Potter",
+            "imgURL": "harry-potter-collection",
+            "genre": "fantasia",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Coleção O Senhor dos Anéis",
+            "imgURL": "the-lord-of-the-rings-collection",
+            "genre": "fantasia aventura",
+            "autor": "J. R. R. Tolkien"
+        },
+        {
+            "name": "Coleção Jogos Vorazes",
+            "imgURL": "the-hunger-games-collection",
+            "genre": "fantasia utopia",
+            "autor": "Suzanne Collins"
+        }
+    ],
+
+    "HarryPotter" : [
+        {
+            "name": "Harry Potter e a Pedra Filosofal",
+            "imgURL": "HP-e-a-pedra-filosofal",
+            "synopsis": "Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger",
+            "autor": "J. K. Rowling"
+        },
+        {
+
+        }
+    ],
+
+    "TheHungerGames" : [
+        {
+            "name": "Jogos Vorazes",
+            "imgURL": "jogos-vorazes",
+            "synopsis": "Na região antigamente conhecida como América do Norte, a Capital de Panem controla 12 distritos e os força a escolher um garoto e uma garota, conhecidos como tributos, para competir em um evento anual televisionado. Todos os cidadãos assistem aos temidos jogos, no qual os jovens lutam até a morte, de modo que apenas um saia vitorioso. A jovem Katniss Everdeen, do Distrito 12, confia na habilidade de caça e na destreza com o arco, além dos instintos aguçados, nesta competição mortal.",
+            "autor": "Suzanne Collins"
+        },
+        {
+
+        }
+    ],
+
+    "TheLordOfTheRings" : [
+        {
+            "name": "O Senhor dos Anéis: A Sociedade do Anel",
+            "imgURL": "OSDA-a-sociedade-do-anel",
+            "synopsis": "Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel.",
+            "autor": "Suzanne Collins"
+        },
+        {
+            
+        }
+    ]
+}

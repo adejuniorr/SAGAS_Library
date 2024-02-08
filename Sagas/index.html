@@ -5,51 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sistema de busca de livros em uma biblioteca com base em saga, título, autor(a), sinopse, etc.">
     <meta name="keywords" content="biblioteca, library, livros, books, harry potter, lord of the rings, o senhor dos anéis, sagas, épicas, histórias">
-    <title>Biblioteca Sagas</title>
-    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <title>SAGAS Library</title>
+    <link rel="shortcut icon" href="public/img/icons/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/vars.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="public/styles/index.css">
+    <link rel="stylesheet" href="public/styles/vars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <header>
+        <div id="SAGAS-logo">
+            <img src="public/img/SAGAS-logo-yellow.svg" alt="SAGAS Library Logo" width="256">
+        </div>
+        <div id="header-tools">
+            <a href="#middle"><img src="public/img/icons/blue-search-icon.svg" width="32" alt="Icone de busca"></a>
+            
+            <div class="dropdown__container">
+                <label class="hamburger__menu">
+                    <input type="checkbox">
+                </label>
+                <div class="dropdown__header__menu">
+                    <nav>
+                        <a href="login.html">Login</a>
+                        <button type="button" class="header_btn" disabled>Meus livros</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="website__top">
         <div class="content">
-            <header>
-                <div id="SAGAS-logo">
-                    <img src="img/SAGAS-logo.svg" alt="SAGAS Library Logo" width="156">
-                </div>
-                <div id="header-tools">
-                    <a href="#middle"><img src="img/icons/blue-search-icon.svg" width="32" alt="Icone de busca"></a>
-                    
-                    <div class="dropdown__container">
-                        <label class="hamburger__menu">
-                            <input type="checkbox">
-                        </label>
-                        <div class="dropdown__header__menu">
-                            <nav>
-                                <button type="button" class="header_btn">Login</button>
-                                <button type="button" class="header_btn" disabled>Meus livros</button>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
             <div class="top__content__wrap ">
-                <div id="left-top-content">
-                    <a href="https://maps.app.goo.gl/5xGP3UMegE8czgJV6" target="_blank">
-                        <img src="img/library-build-img.svg" width="320" alt="Edifício da biblioteca (imagem feita por IA)">
-                    </a>
-                </div>
+                <div id="left-top-content" class="home__page"></div>
                 <div id="right-top-content">
+                    <h3>Confira nosso</h3>
                     <h2>Top 3 da semana</h2>
                     <div class="top3__cards__wrap">
                         <div class="card mb-3 book__card" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4 top3__card__img" id="book-card-img1">
-                                <img src="img/books/harry-potter-e-a-pedra-filosofal.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Pedra Filosofal">
+                                <img src="public/img/books/harry-potter-e-a-pedra-filosofal.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Pedra Filosofal">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body top3__card__text">
@@ -63,7 +58,7 @@
                         <div class="card mb-3 book__card" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4 top3__card__img" id="book-card-img2">
-                                <img src="img/books/harry-potter-e-a-camara-secreta.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Câmara Secreta">
+                                <img src="public/img/books/harry-potter-e-a-camara-secreta.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Câmara Secreta">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body top3__card__text">
@@ -77,7 +72,7 @@
                         <div class="card mb-3 book__card" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4 top3__card__img" id="book-card-img3">
-                                <img src="img/books/harry-potter-e-o-prisioneiro-de-azkaban.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e o Prisioneiro de Azkaban">
+                                <img src="public/img/books/harry-potter-e-o-prisioneiro-de-azkaban.jpg" class="img-fluid rounded-start" alt="Capa do livro Harry Potter e o Prisioneiro de Azkaban">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body top3__card__text">
@@ -96,11 +91,11 @@
 
     <div class="website__middle" id="middle">
         <div class="content middle__img">
-            <img src="img/girl-reading.svg" width="300" alt="Garota Lendo Livro, arte pixelada (IA)">
+            <img src="public/img/girl-reading.svg" width="360" alt="Garota Lendo Livro, arte pixelada (IA)">
         </div>
     </div>
 
-    <div class="website__bottom" id="search">
+    <div class="website__bottom">
         <div class="content">
             <div class="bottom__content__search">
                 <span class="search__title">
@@ -112,24 +107,15 @@
                     <span class="fas fa-search"></span>
                 </div>
 
-                <div class="search__result">
+                <div class="search__result hidden">
                     <div class="card text-bg-light search__result__card">
-                        <img src="img/books/harry-potter-colection-bg.jpg" class="card-img" alt="Coleção Harry Potter">
+                        <img src="public/img/books/harry-potter-collection.jpg" class="card-img" alt="Coleção Harry Potter">
                     </div>
                     <div class="card text-bg-light search__result__card">
-                        <img src="img/books/the-lord-of-the-rings-colection-bg.jpeg" class="card-img" alt="Coleção O Senhor dos Anéis">                        
+                        <img src="public/img/books/the-lord-of-the-rings-collection.jpeg" class="card-img" alt="Coleção O Senhor dos Anéis">                        
                     </div>
                     <div class="card text-bg-light search__result__card">
-                        <img src="img/books/the-hunger-games-colection-bg.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
-                    </div>
-                    <div class="card text-bg-light search__result__card">
-                        <img src="img/books/harry-potter-colection-bg.jpg" class="card-img" alt="Coleção Harry Potter">
-                    </div>
-                    <div class="card text-bg-light search__result__card">
-                        <img src="img/books/the-lord-of-the-rings-colection-bg.jpeg" class="card-img" alt="Coleção O Senhor dos Anéis">                        
-                    </div>
-                    <div class="card text-bg-light search__result__card">
-                        <img src="img/books/the-hunger-games-colection-bg.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
+                        <img src="public/img/books/the-hunger-games-collection.jpeg" class="card-img" alt="Coleção Jogos Vorazes">                        
                     </div>
                 </div> <!-- search__result -->
             </div>
@@ -139,10 +125,10 @@
     <footer>
         <h3>Fale conosco!</h3>
         <div class="footer__links">
-            <a href="https://wa.me/77991379957" target="_blank"><img src="img/icons/blue-whatsapp-icon.svg" width="30" alt="Icone Whatsapp"></a>
-            <a href="#"><img src="img/icons/blue-telegram-icon.svg" width="30" alt="Icone Telegram"></a>
-            <a href="#"><img src="img/icons/blue-instagram-icon.svg" width="30" alt="Icone Instagram"></a>
-            <a href="#"><img src="img/icons/blue-twitter-icon.svg" width="30" alt="Icone Twitter"></a>
+            <a href="https://wa.me/77991379957" target="_blank"><img src="public/img/icons/blue-whatsapp-icon.svg" width="30" alt="Icone Whatsapp"></a>
+            <a href="#"><img src="public/img/icons/blue-telegram-icon.svg" width="30" alt="Icone Telegram"></a>
+            <a href="#"><img src="public/img/icons/blue-instagram-icon.svg" width="30" alt="Icone Instagram"></a>
+            <a href="#"><img src="public/img/icons/blue-twitter-icon.svg" width="30" alt="Icone Twitter"></a>
         </div>
         <p>SAGAS Library © 2024</p>
     </footer>
@@ -150,5 +136,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/48eaddc66e.js" crossorigin="anonymous"></script>
+    <script src="public/js/index.js"></script>
 </body>
 </html>

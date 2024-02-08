@@ -1,0 +1,33 @@
+{
+  "name": "sagas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adejuniorr/SAGAS_Library.git"
+  },
+  "keywords": [
+    "library",
+    "biblioteca",
+    "json",
+    "api"
+  ],
+  "author": "Ademir Júnior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adejuniorr/SAGAS_Library/issues"
+  },
+  "homepage": "https://github.com/adejuniorr/SAGAS_Library#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sistema de busca de livros em uma biblioteca com base em saga, título, autor(a), sinopse, etc.">
+    <meta name="keywords"
+        content="biblioteca, library, livros, books, harry potter, lord of the rings, o senhor dos anéis, sagas, épicas, histórias">
+    <title>SAGAS - Login</title>
+    <link rel="shortcut icon" href="publicimg/icons/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/styles/index.css">
+    <link rel="stylesheet" href="public/styles/login.css">
+    <link rel="stylesheet" href="public/styles/vars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="SAGAS-logo">
+            <a href="index.html"><img src="public/img/SAGAS-logo-yellow.svg" alt="SAGAS Library Logo" width="256"></a>
+        </div>
+    </header>
+    <div class="website__top">
+        <div class="content">
+            <div class="top__content__wrap ">
+                <div id="left-top-content" class="login__page"></div>
+                <div id="right-top-content">
+                    <div class="form__wrap " id="login">
+                        <div class="form__title">
+                            <h2>Login</h2>
+                            <span class="toggle_form__link">Novo(a) por aqui?</span>
+                        </div>
+                        <form id="login-form">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Digite seu email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Digite sua senha">
+                                <a href="">Clique caso esqueça a senha</a>
+                            </div>
+                            <div class="bottom__form">
+                                <button type="submit" class="btn btn-primary">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form__wrap hidden" id="signup">
+                        <h2>Cadastro</h2>
+                        <form id="signup-form">
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" name="" id="userName" placeholder="Digite o nome de usuário">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Digite seu email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Digite sua senha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirmar senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Digite novamente a mesma senha">
+                            </div>
+                            <div class="bottom__form">
+                                <span class="toggle_form__link"><span class="fa-solid fa-arrow-left"></span>Voltar</span>
+                                <button type="submit" class="btn btn-primary">Confirmar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- right-top-content -->
+            </div>
+        </div>
+    </div> <!-- website__top -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/48eaddc66e.js" crossorigin="anonymous"></script>
+    <script src="public/js/index.js"></script>
+</body>
+
+</html>

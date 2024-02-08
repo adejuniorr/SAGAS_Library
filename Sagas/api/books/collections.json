@@ -1,0 +1,22 @@
+{
+    "collections" : [
+        {
+            "name": "Coleção Harry Potter",
+            "imgURL": "harry-potter-collection",
+            "genre": "fantasia",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Coleção O Senhor dos Anéis",
+            "imgURL": "the-lord-of-the-rings-collection",
+            "genre": "fantasia aventura",
+            "autor": "J. R. R. Tolkien"
+        },
+        {
+            "name": "Coleção Jogos Vorazes",
+            "imgURL": "the-hunger-games-collection",
+            "genre": "fantasia utopia",
+            "autor": "Suzanne Collins"
+        }
+    ]
+}
