@@ -262,8 +262,8 @@ header {
     padding: 32px 0;
     border-radius: 16px;
     text-align: center;
-    width: 700px;
-    height: 50vh;
+    max-width: 700px;
+    height: 360px;
     margin: 0 auto;
 }
 
@@ -290,7 +290,7 @@ header {
 }
 
 .search__input__wrap span {
-    color: #ddd;
+    color: #bbb;
 }
 
 .search__result {
@@ -305,6 +305,7 @@ header {
 .search__result__card {
     padding: 6px;
     width: 124px;
+    min-width: 124px;
     height: 180px;
     overflow: hidden;
     cursor: pointer;
@@ -334,6 +335,16 @@ header {
     background-color: #3800FF;
 }
 
+.result__not__found {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.result__not__found span {
+    font-family: 'Rakkas', sans-serif;
+    font-size: 2.3rem;
+    color: #8a7404;
+}
 /* FIM SECTION - SEARCH*/
 
 

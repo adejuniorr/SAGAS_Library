@@ -11,7 +11,7 @@
             </label>
             <div class="dropdown__header__menu">
                 <nav>
-                    <a href="/login">Login</a>
+                    <button href="/login" disabled>Login</button>
                     <button type="button" class="header_btn" disabled>Meus livros</button>
                 </nav>
             </div>
@@ -101,13 +101,10 @@
                 <span class="fas fa-search"></span>
             </div>
 
-            <div class="search__result">
-                {{!-- {{#each books}}
-                <div class="card text-bg-light search__result__card">
-                    <img src=`/img/books/{{dataValues.imgURL}}.jpg` class="card-img" alt="Coleção Harry Potter">
-                </div>
-                {{/each}} --}}
-            </div> <!-- search__result -->
+            <div class="result__not__found">
+                <span>Digite o título do livro ou coleção que estiver buscando e aperte Enter (=</span>
+            </div>
+            <div class="search__result"></div> <!-- search__result -->
         </div>
     </div>
 </div> <!-- website__bottom -->
@@ -115,11 +112,14 @@
 <footer>
     <h3>Fale conosco!</h3>
     <div class="footer__links">
-        <a href="https://wa.me/77991379957" target="_blank"><img src="/img/icons/blue-whatsapp-icon.svg"
-                width="30" alt="Icone Whatsapp"></a>
-        <a href="#"><img src="/img/icons/blue-telegram-icon.svg" width="30" alt="Icone Telegram"></a>
-        <a href="#"><img src="/img/icons/blue-instagram-icon.svg" width="30" alt="Icone Instagram"></a>
-        <a href="#"><img src="/img/icons/blue-twitter-icon.svg" width="30" alt="Icone Twitter"></a>
+        <a href="https://wa.me/77991379957" target="_blank"><img src="/img/icons/blue-whatsapp-icon.svg" width="30"
+                alt="Icone Whatsapp"></a>
+        <a href="https://www.linkedin.com/in/dev-ademirjunior" target="_blank"><img src="/img/icons/blue-telegram-icon.svg" width="30"
+                alt="Icone Telegram"></a>
+        <a href="https://www.linkedin.com/in/dev-ademirjunio" target="_blank"><img src="/img/icons/blue-instagram-icon.svg" width="30"
+                alt="Icone Instagram"></a>
+        <a href="https://www.linkedin.com/in/dev-ademirjunio" target="_blank"><img src="/img/icons/blue-twitter-icon.svg" width="30"
+                alt="Icone Twitter"></a>
     </div>
     <p>SAGAS Library © 2024</p>
 </footer>

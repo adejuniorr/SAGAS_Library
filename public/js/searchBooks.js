@@ -4,45 +4,52 @@ const results = document.getElementsByClassName('search__result')[0];
 
 $(searchIinput).on('keyup', (e) => {
     const inputVal = e.target.value.toLowerCase();
-    //console.log('typing...');
-
-    if (inputVal === '') {
-        $(results).toggleClass('hidden');
-        //console.log('input vazio');
-    }
     
-    requestApi(inputVal);
-    $(results).removeClass('hidden');
+    if (inputVal === '') {
+        clearResults();
+        $('.result__not__found').removeClass('hidden');
+    }
+
+    if (e.key === 'Enter') {
+        $('.result__not__found').addClass('hidden');
+        requestApi(inputVal);
+    }
 });
 
-/* function requestApi(input) {
-    fetch(`http://localhost:3000/collections?q=${input}`)
-        .then(res => res.json())
-        .then(data => console.log(data) /* displayContent(data) )
-} */
-
-const path = require('path');
 function requestApi(input) {
-    fetch(path.join(__dirname,'api/booksAPI.json'))
+    fetch('./api/booksAPI.json')
         .then(res => res.json())
-        .then(data => console.log(data) /* displayContent(data) */)
+        .then((data) => {
+            let books = data.collections;
+            displayContent(books, input)
+        })
 }
 
-function displayContent(data) {
-    if (true) {
-        data.forEach(object => {
+function displayContent(data, search) {
+    data.forEach(object => {
+        let itemFound = object.name.toLowerCase().includes(search);
+
+        if (itemFound) {
             let bookImg = object.imgURL;
-            
+
             let bookDiv = document.createElement('div');
-            bookDiv.classList.add('card text-bg-light search__result__card');
+            $(bookDiv).addClass('card text-bg-light search__result__card');
 
             let bookCard = document.createElement('img');
-            bookCard.src = `public/img/books/${bookImg}.jpg`
+            bookCard.src = `./img/books/${bookImg}.jpg`
             bookCard.classList.add('card-img')
             bookCard.alt = object.name;
 
             bookDiv.appendChild(bookCard)
             results.appendChild(bookDiv);
-        });}
+        }
+    });
+}
 
+function clearResults() {
+    do {
+        results.childNodes.forEach((item) => {
+            results.removeChild(item);
+        });
+    } while (results.childNodes.length > 0);
 }

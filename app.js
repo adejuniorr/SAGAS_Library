@@ -23,13 +23,12 @@ app.set('view engine', 'handlebars');
 
 // ROUTES
 app.get('/', (req, res) => {
-    res.render('index', { booksCollections });
+    res.render('index');
 })
 
 app.get('/login', (req, res) => {
     res.render('login');
 });
-
 
 
 
