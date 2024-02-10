@@ -1,3 +1,9 @@
+header span {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
 #right-login-content {
     display: flex;
     width: 520px;

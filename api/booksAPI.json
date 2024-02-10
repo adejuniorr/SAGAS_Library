@@ -1,0 +1,108 @@
+{
+    "collections" : [
+        {
+            "name": "Coleção Harry Potter",
+            "imgURL": "harry-potter-collection",
+            "genre": "fantasia",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Coleção O Senhor dos Anéis",
+            "imgURL": "the-lord-of-the-rings-collection",
+            "genre": "fantasia aventura",
+            "autor": "J. R. R. Tolkien"
+        },
+        {
+            "name": "Coleção Jogos Vorazes",
+            "imgURL": "the-hunger-games-collection",
+            "genre": "fantasia utopia",
+            "autor": "Suzanne Collins"
+        },
+
+        {
+            "name": "Harry Potter e a Pedra Filosofal",
+            "imgURL": "HP-e-a-pedra-filosofal",
+            "synopsis": "Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e a Câmara Secreta",
+            "imgURL": "HP-e-a-camara-secreta",
+            "synopsis": "A história desse segundo livro segue a cronologia logo após o primeiro ano escolar de Harry na escola de bruxaria. O livro conta a lenda de uma câmara secreta onde existe um monstro escondido que pode matar todos que não tem o sangue puro de bruxos.",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e o Prisioneiro de Azkaban",
+            "imgURL": "HP-e-o-prisioneiro-de-azkaban",
+            "synopsis": "Sinopse. Durante 12 anos o forte de Azkaban guardou o prisioneiro Sirius Black, acusado de matar 13 pessoas e ser o principal ajudante de Voldemort, o Senhor das Trevas. Agora ele conseguiu escapar, deixando apenas uma pista: seu destino é a escola de Hogwarts, em busca de Harry Potter.",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e o Cálice de Fogo",
+            "imgURL": "HP-e-o-calice-de-fogo",
+            "synopsis": "Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry. Além disso, ele terá que lidar ainda com os problemas comuns da adolescência amor, amizade, aceitação e rejeição.",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e a Ordem da Fênix",
+            "imgURL": "HP-e-a-ordem-da-fenix",
+            "synopsis": "Harry vai enfrentar as investidas de Voldemort sem a proteção de Dumbledore, já que o diretor de Hogwarts é afastado da escola. E vai ser sem a ajuda de seu protetor que o jovem herói enfrentará descobertas sobre a personalidade controversa de seu pai, Tiago Potter, e a morte de alguém muito próximo.",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e o Enigma do Príncipe",
+            "imgURL": "HP-e-o-enigma-do-principe",
+            "synopsis": "Harry, que acabou de completar 16 anos, parte rumo ao sexto ano na Escola de Magia e Bruxaria de Hogwarts, animado e ao mesmo tempo apreensivo com a perspectiva de ter aulas particulares com o professor Dumbledore, o diretor da escola e o bruxo mais respeitado em toda comunidade mágica.",
+            "autor": "J. K. Rowling"
+        },
+        {
+            "name": "Harry Potter e as Relíquias da Morte",
+            "imgURL": "HP-e-as-reliquias-da-morte",
+            "synopsis": "Em Harry Potter e as Relíquias da Morte, o encontro inevitável com Lord Voldemort não pode mais ser adiado. Harry, no entanto, precisa ganhar tempo para encontrar as Horcruxes que ainda estão faltando. E, pelo caminho, descobrir o que são afinal as Relíquias da Morte e como ele pode usá-las contra o Lorde das Trevas.",
+            "autor": "J. K. Rowling"
+        },
+
+        {
+            "name": "Jogos Vorazes",
+            "imgURL": "THG-jogos-vorazes",
+            "synopsis": "Quando Katniss Everdeen, de 16 anos, decide participar dos Jogos Vorazes para poupar a irmã mais nova, causando grande comoção no país, ela sabe que essa pode ser a sua sentença de morte. Mas a jovem usa toda a sua habilidade de caça e sobrevivência ao ar livre para se manter viva.",
+            "autor": "Suzanne Collins"
+        },
+        {
+            "name": "Jogos Vorazes: Em Chamas",
+            "imgURL": "THG-em-chamas",
+            "synopsis": "Depois da improvável e inusitada vitória de Katniss Everdeen e Peeta Mellark nos últimos Jogos Vorazes, algo parece ter mudado para sempre em Panem. Aqui e ali, distúrbios e agitações nos distritos dão sinais de que uma revolta é iminente."
+        },
+        {
+            "name": "Jogos Vorazes: A Esperança",
+            "imgURL": "THG-a-esperanca",
+            "synopsis": "Depois de sobreviver duas vezes à crueldade de uma arena projetada para destruí-la, Katniss acreditava que não precisaria mais lutar. Mas as regras do jogo mudaram: com a chegada dos rebeldes do lendário Distrito 13, enfim é possível organizar uma resistência. Começou a revolução.",
+            "autor": "Suzanne Collins"
+        },
+        {
+            "name": "Jogos Vorazes: A Cantiga dos Pássaros e das Serpentes",
+            "imgURL": "THG-a-cantiga",
+            "synopsis": "A outrora importante casa Snow passa por tempos difíceis e o destino dela depende da pequena chance de Coriolanus ser capaz de encantar, enganar e manipular seus colegas estudantes para conseguir mentorar o tributo vencedor. A sorte não está a favor dele.",
+            "autor": "Suzanne Collins"
+        },
+
+        {
+            "name": "O Senhor dos Anéis: A Sociedade do Anel",
+            "imgURL": "OSDA-a-sociedade-do-anel",
+            "synopsis": "Numa cidadezinha indolente do Condado, um jovem hobbit é encarregado de uma imensa tarefa. Deve empreender uma perigosa viagem através da Terra-média até as Fendas da Perdição, e lá destruir o Anel do Poder - a única coisa que impede o domínio maléfico do Senhor do Escuro.",
+            "autor": "J. R. R. Tolkien"
+        },
+        {
+            "name": "O Senhor dos Anéis: As Duas Torres",
+            "imgURL": "OSDA-as-duas-torres",
+            "synopsis": "Um ataque-surpresa pôs fim à jornada conjunta da Sociedade do Anel. De um lado, o trio formado pelo elfo Legolas, pelo anão Gimli e por Aragorn, herdeiro da realeza dos Homens, tenta resgatar os jovens hobbits Merry e Pippin, capturados por guerreiros-órquicos.",
+            "autor": "J. R. R. Tolkien"
+        },
+        {
+            "name": "O Senhor dos Anéis: O Retorno do Rei",
+            "imgURL": "OSDA-o-retorno-do-rei",
+            "synopsis": "Gandalf, O Branco e o hobbit Pippin partem em direção à majestosa cidade de Minas Tirith, que já foi o principal baluarte dos Homens contra a ameaça de Sauron, mas que está prestes a sucumbir diante da força avassaladora do Senhor Sombrio.",
+            "autor": "J. R. R. Tolkien"
+        }
+    ]
+}

@@ -25,7 +25,8 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "express": "^4.18.2",
-    "express-handlebars": "^7.1.2"
+    "express-handlebars": "^7.1.2",
+    "json-server": "^1.0.0-alpha.23"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"

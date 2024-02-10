@@ -1,23 +1,3 @@
-// Search Books Section
-const searchIinput = document.getElementById('search_book_input');
-const results = document.getElementsByClassName('search__result')[0];
-
-$(searchIinput).on('input', (e) => {
-    const inputVal = e.target.value.toLowerCase();
-
-    if (inputVal === '') {
-        $(results).toggleClass('hidden');
-    }
-    
-    requestApi(inputVal);
-});
-
-function requestApi(input) {
-    
-}
-
-// END - Search Books Section
-
 // Toggle Login/SignUp forms
 $('.toggle_form__link').on('click', () => {
     $('#login').toggleClass('hidden');
