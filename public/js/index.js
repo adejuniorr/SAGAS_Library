@@ -1,3 +1,28 @@
+$('.book__card').on('click', function () {
+    let bookImg = $(this).find('img')[0].src;
+    let bookTitle = $(this).find('h5')[0].innerText;
+
+    getBookDescription(bookTitle)
+        .then((res) => console.log(res))
+
+});
+
+function getBookDescription(bookTitle) {
+    return new Promise((resolve, reject) => {
+        fetch('./api/booksAPI.json')
+            .then(res => res.json())
+            .then((data) => { 
+                const book = data.books.find(book => book.name === bookTitle);
+
+                book ? resolve(book.synopsis) : reject("Livro não encontrado");
+            })
+            .catch(err => reject(err));
+    });    
+}
+
+
+
+
 // Toggle Login/SignUp forms
 $('.toggle_form__link').on('click', () => {
     $('#login').toggleClass('hidden');

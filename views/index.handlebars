@@ -26,56 +26,23 @@
                 <h3>Confira nosso</h3>
                 <h2>Top 3 da semana</h2>
                 <div class="top3__cards__wrap">
+                {{#each books}}
                     <div class="card mb-3 book__card" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4 top3__card__img" id="book-card-img1">
-                                <img src="/img/books/harry-potter-e-a-pedra-filosofal.jpg"
+                            <div class="col-md-4 top3__card__img" id="book-card-img3">
+                                <img src="./img/books/{{imgURL}}.jpg"
                                     class="img-fluid rounded-start"
-                                    alt="Capa do livro Harry Potter e a Pedra Filosofal">
+                                    alt="Capa do livro {{name}}">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body top3__card__text">
-                                    <h5 class="card-title" id="book-card-title1">Harry Potter e a Pedra Filosofal</h5>
-                                    <p class="card-text" id="book-card-sinopses1">O início da jornada de Harry Potter no
-                                        mundo mágico, frequentando a Escola de Magia e Bruxaria de Hogwarts.</p>
+                                    <h5 class="card-title" id="book-card-title3">{{name}}</h5>
+                                    <p class="card-text" id="book-card-sinopses3">{{summary}}</p>
                                 </div>
                             </div>
                         </div>
                     </div> <!-- CARD 1 -->
-
-                    <div class="card mb-3 book__card" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4 top3__card__img" id="book-card-img2">
-                                <img src="/img/books/harry-potter-e-a-camara-secreta.jpg"
-                                    class="img-fluid rounded-start" alt="Capa do livro Harry Potter e a Câmara Secreta">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body top3__card__text">
-                                    <h5 class="card-title" id="book-card-title2">Harry Potter e a Câmara Secreta</h5>
-                                    <p class="card-text" id="book-card-sinopses2">Harry descobre uma câmara secreta em
-                                        Hogwarts e enfrenta uma ameaça que petrifica os estudantes da escola.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- CARD 2 -->
-
-                    <div class="card mb-3 book__card" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4 top3__card__img" id="book-card-img3">
-                                <img src="/img/books/harry-potter-e-o-prisioneiro-de-azkaban.jpg"
-                                    class="img-fluid rounded-start"
-                                    alt="Capa do livro Harry Potter e o Prisioneiro de Azkaban">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body top3__card__text">
-                                    <h5 class="card-title" id="book-card-title3">Harry Potter e o Prisioneiro de Azkaban
-                                    </h5>
-                                    <p class="card-text" id="book-card-sinopses3">Harry descobre a verdade sobre seu
-                                        passado enquanto enfrenta um perigoso prisioneiro que escapou de Azkaban.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- CARD 3 -->
+                {{/each}}
                 </div> <!-- top-3-cards -->
 
             </div> <!-- right-top-content -->

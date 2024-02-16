@@ -1,18 +1,19 @@
 // Search Books Section
-const searchIinput = document.getElementById('search_book_input');
+const searchInput = document.getElementById('search_book_input');
 const results = document.getElementsByClassName('search__result')[0];
 
-$(searchIinput).on('keyup', (e) => {
-    const inputVal = e.target.value.toLowerCase();
-    
+$(searchInput).on('keyup', (e) => {
+    const inputVal = e.target.value.toLowerCase();    
+
+    $('.result__not__found').addClass('hidden');
+    $(results).removeClass('hidden');
+    clearResults();
+    requestApi(inputVal);
+
     if (inputVal === '') {
         clearResults();
         $('.result__not__found').removeClass('hidden');
-    }
-
-    if (e.key === 'Enter') {
-        $('.result__not__found').addClass('hidden');
-        requestApi(inputVal);
+        $(results).addClass('hidden');
     }
 });
 
@@ -20,7 +21,9 @@ function requestApi(input) {
     fetch('./api/booksAPI.json')
         .then(res => res.json())
         .then((data) => {
-            let books = data.collections;
+            let collections = data.collections;
+            let books = data.books;
+            displayContent(collections, input)
             displayContent(books, input)
         })
 }
@@ -53,3 +56,5 @@ function clearResults() {
         });
     } while (results.childNodes.length > 0);
 }
+
+// Top 3 Books

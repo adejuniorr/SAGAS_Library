@@ -22,8 +22,9 @@ app.set('view engine', 'handlebars');
 
 
 // ROUTES
+const booksAPI = require('./public/api/booksAPI.json');
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', booksAPI);
 })
 
 app.get('/login', (req, res) => {
